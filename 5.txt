@@ -16,12 +16,12 @@ syn0= 2*np.random.random((3,1))-1
 
 for iter in range(xrange):
 
-	l0= X
+	l0=x
 	l1=nonlin(np.dot (l0, syn0))
 	l1_error =y-l1
 	l1_delta= l1_error*nonlin(l1,True)
 	syn0 += np.dot (l0.T,l1_delta)
 
 print("Actual Output:\n"+str(y))
-print ("Output After Training:")
-print (l1)
+print("Output After Training:")
+print(l1)
