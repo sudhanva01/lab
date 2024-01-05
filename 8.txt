@@ -1,16 +1,16 @@
 from sklearn.model_selection import train_test_split
 
-from sklearn. neighbors import KNeighborsClassifier
+from sklearn.neighbors import KNeighborsClassifier
 
 from sklearn.metrics import confusion_matrix,classification_report
 
 from sklearn import datasets # The dataset used here is iris.csv stored in the anaconda installed folder
 
-iris-datasets.load_iris()
+iris=datasets.load_iris()
 
-iris_data-iris.data
+iris_data=iris.data
 
-iris_labels-iris.target
+iris_labels=iris.target
 
 #print(iris_data)
 
