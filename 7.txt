@@ -24,7 +24,7 @@ markers=['s','o','v']
 
 k=3
 
-clusters KMeans(n_clusters=k).fit(x)
+clusters=KMeans(n_clusters=k).fit(x)
 
 for i,L in enumerate(clusters.labels_):
 
