@@ -44,3 +44,15 @@ s_final, g_final = learn(concepts, target)
 
 print("Final Specific_h: ", s_final, sep="\n")
 print("Final General_h: ", g_final, sep="\n")
+
+data set
+
+sky,airtemp,humidity,wind,water,forecast,enjoysport
+
+sunny,warm,normal,strong,warm,same,yes
+
+sunny,warm,high,strong,warm,same,yes
+
+rainy,cold,high,strong,warm,change,no
+
+sunny,warm,high,strong,cool,change,yes
