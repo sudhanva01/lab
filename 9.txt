@@ -27,7 +27,7 @@ def localWeightRegression(xmat,ymat,k):
     return ypred
 # The dataset used here is tips.csv stored in the anaconda installed folder
 data=pd.read_csv('tips.csv')
-bill=array(data.t_bill)
+bill=array(data.bill)
 tip=array(data.tip)
 mbill=mat(bill)
 mtip=mat(tip)
