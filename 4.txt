@@ -18,3 +18,24 @@ graph.write_png("tree.jpg")
 img=pltimg.imread('tree.jpg')
 imgplot = plt.imshow(img)
 plt.show()
+
+
+
+
+
+import matplotlib.pyplot as plt
+from sklearn import datasets, tree
+from sklearn.tree import DecisionTreeClassifier
+
+# Load the Iris dataset
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target  # Use lowercase 'y' for consistency
+
+# Create the decision tree classifier
+clf = DecisionTreeClassifier(criterion="entropy")
+clf.fit(X, y)
+
+# Visualize the decision tree
+tree.plot_tree(clf, filled=True)  # Use the built-in plot_tree function
+plt.show()
