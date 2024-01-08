@@ -7,5 +7,5 @@ model=MultinomialNB()
 model.fit(dataset.data,dataset.target)
 expected=dataset.target
 predected=model.predict(dataset.data)
-print(metrics.accuracy_score(expected,predected))
-print(metrics.confusion_matrix(expected,predected))    
+print("accuracy =",metrics.accuracy_score(expected,predected))
+print("confusion matrics=",metrics.confusion_matrix(expected,predected))
