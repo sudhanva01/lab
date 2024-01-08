@@ -35,7 +35,7 @@ y = iris.target  # Use lowercase 'y' for consistency
 # Create the decision tree classifier
 clf = DecisionTreeClassifier(criterion="entropy")
 clf.fit(X, y)
-
+print(iris.target_names,iris.feature_names)
 # Visualize the decision tree
 tree.plot_tree(clf, filled=True)  # Use the built-in plot_tree function
 plt.show()
